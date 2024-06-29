@@ -11,6 +11,7 @@ import TestShader from "./TestShader.tsx";
 import Pattern1 from "./Pattern1.tsx";
 import Pattern3 from "./Pattern3.tsx";
 import Pattern2 from "./Pattern2.tsx";
+import Pattern7 from "./Pattern7.tsx";
 
 interface FlagShader {
   updateTime: (elapsedTime: number) => void;
@@ -124,7 +125,7 @@ function Scene() {
       <Pattern1 scene={scene} ref={flagShaderRef3} />
       <Pattern2 scene={scene} ref={flagShaderRef4} />
       <Pattern3 scene={scene} ref={flagShaderRef5} />
-      <FlagShader scene={scene} ref={flagShaderRef6} />
+      <Pattern7 scene={scene} ref={flagShaderRef6} />
       <TestShader scene={scene} ref={flagShaderRef7} />
       <FlagShader scene={scene} ref={flagShaderRef8} />
       <TestShader scene={scene} ref={flagShaderRef9} />
