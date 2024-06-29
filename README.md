@@ -2,11 +2,11 @@
 
 
 
-- [https://stefanygeraldine.github.io/basic-shaders/](https://stefanygeraldine.github.io/basic-shaders/)
+- [https://stefanygeraldine.github.io/shaders-patterns/](https://stefanygeraldine.github.io/shaders-patterns/)
 
 ![Project Screenshot](public/img_1.png)
 
-# Basic Practice of Shaders with Three.js
+# Shaders Patterns with Three.js
 
 This project demonstrates a basic practice of using vertex and fragment shaders with Three.js. Shaders are small programs that run on the GPU and are used to control the rendering of graphics. By using shaders, you can create complex visual effects that would be difficult or impossible to achieve with standard Three.js materials.
 

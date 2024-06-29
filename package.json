@@ -1,6 +1,6 @@
 {
-  "homepage": "https://stefanygeraldine.github.io/basic-shaders",
-  "name": "basic-shaders",
+  "homepage": "https://stefanygeraldine.github.io/shaders-patterns",
+  "name": "shaders-patterns",
   "private": true,
   "version": "0.0.0",
   "type": "module",
