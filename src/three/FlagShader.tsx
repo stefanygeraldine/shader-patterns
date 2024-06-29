@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { IObjectProps } from "../types.ts";
-import flagVertexShader from "../shaders/test/vertex.glsl";
-import flagFragmentShader from "../shaders/test/fragment.glsl";
+import flagVertexShader from "../shaders/flag/vertex.glsl";
+import flagFragmentShader from "../shaders/flag/fragment.glsl";
 import { forwardRef, useImperativeHandle, useRef } from "react";
 import MyTexture from "../assets/textures/gradients/texture.png";
 

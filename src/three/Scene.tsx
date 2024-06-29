@@ -7,6 +7,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import FlagShader from "./FlagShader.tsx";
 
 import useSize from "../hooks/useSize.ts";
+import TestShader from "./TestShader.tsx";
+import Pattern1 from "./Pattern1.tsx";
 
 interface FlagShader {
   updateTime: (elapsedTime: number) => void;
@@ -72,6 +74,7 @@ function Scene() {
         const positionY = (numPlanes / 2 - rowPosition - 0.5) * planeHeight;
 
         if (ref.current) {
+          // @ts-ignore
           ref.current?.updatePositionAndSize(
             planeWidth,
             planeHeight,
@@ -114,15 +117,15 @@ function Scene() {
 
   return (
     <>
-      <FlagShader scene={scene} ref={flagShaderRef1} />
+      <TestShader scene={scene} ref={flagShaderRef1} />
       <FlagShader scene={scene} ref={flagShaderRef2} />
-      <FlagShader scene={scene} ref={flagShaderRef3} />
+      <Pattern1 scene={scene} ref={flagShaderRef3} />
       <FlagShader scene={scene} ref={flagShaderRef4} />
-      <FlagShader scene={scene} ref={flagShaderRef5} />
+      <TestShader scene={scene} ref={flagShaderRef5} />
       <FlagShader scene={scene} ref={flagShaderRef6} />
-      <FlagShader scene={scene} ref={flagShaderRef7} />
+      <TestShader scene={scene} ref={flagShaderRef7} />
       <FlagShader scene={scene} ref={flagShaderRef8} />
-      <FlagShader scene={scene} ref={flagShaderRef9} />
+      <TestShader scene={scene} ref={flagShaderRef9} />
     </>
   );
 }
