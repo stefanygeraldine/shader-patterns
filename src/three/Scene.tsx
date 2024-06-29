@@ -9,6 +9,7 @@ import FlagShader from "./FlagShader.tsx";
 import useSize from "../hooks/useSize.ts";
 import TestShader from "./TestShader.tsx";
 import Pattern1 from "./Pattern1.tsx";
+import Pattern2 from "./Pattern2.tsx";
 
 interface FlagShader {
   updateTime: (elapsedTime: number) => void;
@@ -120,7 +121,7 @@ function Scene() {
       <TestShader scene={scene} ref={flagShaderRef1} />
       <FlagShader scene={scene} ref={flagShaderRef2} />
       <Pattern1 scene={scene} ref={flagShaderRef3} />
-      <FlagShader scene={scene} ref={flagShaderRef4} />
+      <Pattern2 scene={scene} ref={flagShaderRef4} />
       <TestShader scene={scene} ref={flagShaderRef5} />
       <FlagShader scene={scene} ref={flagShaderRef6} />
       <TestShader scene={scene} ref={flagShaderRef7} />
